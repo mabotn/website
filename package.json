@@ -1,24 +1,14 @@
 {
-    "name": "mabo",
-    "version": "1.0.0",
-    "description": "Mabo's Personal Website",
-    "main": "server.js",
-    "dependencies": {
-        "express.js": "^1.0.0"
-    },
-    "devDependencies": {},
+    "name": "mabo-website",
+    "version": "0.0.1",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mabotn/website.git"
+    "dependencies": {
+        "express": "3.0.0rc4"
     },
-    "author": "Mohamed Anas",
-    "license": "GPL-3.0",
-    "bugs": {
-        "url": "https://github.com/mabotn/website/issues"
-    },
-    "homepage": "https://github.com/mabotn/website#readme"
+    "engines": {
+        "node": "0.8.x",
+        "npm": "1.1.x"
+    } 
 }
