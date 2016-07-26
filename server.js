@@ -13,5 +13,9 @@ app.get('/', function(req, res) {
     res.sendFile('index.html')
 })
 
+app.get('/.well-known/acme-challenge/UXbgaR35IlajyvQL7Z-QQ34Ep4vdXlfvihkfHLz7hys', function(req, res) {
+    res.send('UXbgaR35IlajyvQL7Z-QQ34Ep4vdXlfvihkfHLz7hys.k1vqNLUTVmPEyRVc5XqD4rePpeD6vEYAtwZNrz4g8Ao')
+})
+
 // run the NodeJs application
 app.listen(port)
