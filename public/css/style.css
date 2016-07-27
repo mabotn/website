@@ -1,0 +1,16 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya|Amatic+SC|Quicksand';
+
+* {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Alegreya', serif;
+}
+
+html, body, header {
+    height: 100%;
+}
+
+header {
+    background: #FDFDFD url('/images/intro-bg.jpg') no-repeat;
+    background-size: auto 100%;
+}
