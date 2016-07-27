@@ -1,9 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya|Amatic+SC|Quicksand';
 
 * {
-    font-family: 'Amatic SC', cursive;
     font-family: 'Quicksand', sans-serif;
-    font-family: 'Alegreya', serif;
 }
 
 html, body, header {
@@ -13,4 +11,20 @@ html, body, header {
 header {
     background: #FDFDFD url('/images/intro-bg.jpg') no-repeat;
     background-size: auto 100%;
+}
+
+header .jumbotron {
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 30px;
+}
+
+header .jumbotron h1.subtitle {
+    font-family: 'Amatic SC';
+}
+
+p {
+    font-family: 'Alegreya', serif;
 }
