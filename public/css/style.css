@@ -13,16 +13,53 @@ header {
     background-size: auto 100%;
 }
 
-header .jumbotron {
+.overlay {
     background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+header .jumbotron {
+    background: none;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    padding-right: 30px;
 }
 
 header .jumbotron h1.subtitle {
     font-family: 'Amatic SC';
+}
+
+header .alert {
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+.icon-bar {
+    background: #555;
+}
+
+.navbar-toggle {
+    margin-right: 0px;
+    border: none;
+}
+
+section {
+    height: 100%;
+}
+
+.header {
+    background: #3498db;
+    color: white;
+}
+
+.header h1 {
+    margin: 0px;
+    padding: 15px;
+    padding-top: 65px;
 }
 
 p {
