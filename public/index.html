@@ -62,13 +62,15 @@
                 <p>Coming So Soon... Just Hold On!</p>
             </div>
 
-            <div id="qod" class="alert"></div>
+            <div id="quote" class="alert"></div>
         </header>
 
         <script>
-            $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", function(a) {
-                $("#qod").html(a[0].content + "<p>— " + a[0].title + "</p>")
-            })
+            setInterval(function() {
+                $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", function(a) {
+                    $("#quote").html(a[0].content + "<p>— " + a[0].title + "</p>")
+                })
+            }, 10000);
         </script>
     </body>
 </html>
