@@ -66,8 +66,8 @@
         </header>
 
         <script>
-            $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", function(a) {
-                $("#quote").html(a[0].content + "<p>— " + a[0].title + "</p>")
+            $.getJSON("/api/v1/quotes", function(quote) {
+                $("#quote").html('<p>' + quote.quote + '<br>— ' + quote.author + '</p>')
             })
         </script>
     </body>
